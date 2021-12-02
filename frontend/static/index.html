@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+        Author: Tara McKee
+        Date: 9/21/2021
+        Purpose: BaileyKy Website Home Page
+
+    -->
+	<title>
+		BaileyKy - Home Page
+	</title>
+
+	<!--link to style sheet-->
+
+	<link rel="stylesheet" type="text/css" href="css/stylesBK.css"/>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="javascript/bookstore.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			console.log("doc ready");
+			loginButton = newLoginButton();
+		});
+	</script>
+
+</head>
+
+<body>
+
+<!--container holding header Text-->
+
+<div class = "jumbotron jumbotron-fluid headerBox">
+	<div class="centered">BaileyKy Books</div>
+</div>
+
+<!--Navigation Bar-->
+
+<nav class="navbar navbar-expand-sm bg-dark">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="indexBK.html">Main Menu</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="aboutUs.html">About Us</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="membership.html">Membership</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="orderNow.html">Order Now</a>
+		</li>
+	</ul>
+	<!--Items in the navbar without the mr-auto class will right-justify-->
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a id="loginButton" class="nav-link ml-auto" href="#" style="">Sign In</a>
+		</li>
+		<li class="nav-item">
+			<a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+				<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+			</svg></a>
+		</li>
+	</ul>
+</nav>
+
+<!--container holding body configuration/text-->
+
+<div class = "bodyBox">
+
+
+
+	<div class="storeFront"></h2></div>
+
+	<style>
+		.bookClubText {
+			position:absolute;
+			top: 17px;
+			right: 125px;
+		}
+	</style>
+
+	<div class="bookClub" > <a href="membership.html"> <h3 class="bookClubText">Become a Member </h3></a></div>
+
+</div>
+
+</body>
+
+<footer>
+
+	<div class="copyright">Copyright 2021, Tara McKee, Lloyd Leckenby, Neil Brooks , Robert Walters 10/30/2018, CTU - Class CS492 </div>
+
+
+</footer>
+
+
+</html>

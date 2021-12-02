@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xml:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store Application</title>
+</head>
+<body>
+<h1>Book List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Publisher</th>
+        <th>Genre</th>
+        <th>Cost</th>
+        <th>Stock</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}">123</td>
+        <td th:text="${book.title}">Spring in Action</td>
+        <td th:text="${book.publisher.name}">Wrox</td>
+        <td th:text="${book.genre}">Horror</td>
+        <td th:text="${book.cost}">0.00</td>
+        <td th:text="${book.stock}">0</td>
+    </tr>
+</table>
+
+</body>
+</html>

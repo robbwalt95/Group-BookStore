@@ -1,0 +1,188 @@
+/*Author: Tara Mckee
+Purpose: BaileyKy Website Styles
+Date: 9/21/2021
+*/
+
+body {
+	margin:0;
+	padding:0;
+}
+
+/*--Class for Header Image (Fence Border) and style->*/
+
+.headerBox {
+	height:20vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/FenceHeaderBorder.jpeg);
+	background-size: cover;
+	background-position:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	position: relative;
+	margin-bottom:0 !IMPORTANT; /*override Bootstrap margin value*/
+}
+
+/* Centered text for Title (BaileyKy Books) */
+.centered {
+	font-family: Jazz LET, Fantasy;
+	font-size: 70px;
+
+}
+
+.my-small-label {
+	font-size:20px;
+}
+
+.form-group {
+	margin-bottom:0.5rem !IMPORTANT;
+	width: 600px;
+
+
+}
+
+/*--Class for Body Image (gradient triangle pattern) and style->*/
+
+.bodyBox {
+	width: 100%;
+	height:100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bodyImage.jpeg);
+	background-size: cover;
+	background-position:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:black;
+	font-size:2wv;
+	position: relative;
+	overflow: auto;
+}
+
+.storeFront{
+	width: 800px;
+	height: 600px;
+	left:70px;
+	top:15px;
+	background: url(../images/storeFront.jpeg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	position: absolute;
+	padding:0;
+	margin:0;
+
+}
+
+
+.bookClub {
+	width:500px;
+	height:700px;
+	background: url(../images/BookClubMember.jpeg);
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:absolute;
+	text-align:center;
+	color:white;
+	top:15px;
+	right:100px;
+	padding:0;
+	margin:0;
+
+}
+/* styling for ordernow page.  For all Book image style*/
+
+.content-section {
+	margin-top: 1em;
+	margin: 1em;
+	position: relative;
+}
+
+.container {
+	margin-top: 1em;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+.section-header {
+	margin-top: 1em;
+	font-family: "Metal Mania";
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.shop-item {
+	display: centered;
+	margin: 30px;
+}
+
+.shop-item-title {
+	margin-top: 1em;
+	display: block;
+	width: 100%;
+	height: justify-content;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 0px;
+	position: relative;
+
+}
+
+.shop-item-image {
+	height: 150px;
+	position: relative;
+}
+
+.shop-item-details {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+.shop-item-price {
+	flex-grow: 1;
+	color: white;
+	font-size: 20px;
+}
+
+.shop-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.btn-primary {
+	color: white;
+	background-color: #56CCF2;
+	border: none;
+	border-radius: .3em;
+	font-weight: bold;
+	float: left;
+}
+
+.about {
+	margin-bottom:0.5rem !IMPORTANT;
+	width: 450px;
+	font-size: 25px;
+}
+
+
+
+/* Centered text for Body (Our Info here) */
+.centered2 {
+	font-family: Jazz LET, Fantasy;
+	font-size: 40px;
+
+}
+
+/* Footer class  */
+
+.copyright {
+	background-color: gray;
+	text-align: center;
+	font-size:24px;
+	position:relative;
+}
